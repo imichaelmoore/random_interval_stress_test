@@ -10,6 +10,10 @@ The random interval range for how long the wait period before stress tests are r
 
 You can pass arguments to `stress-ng` with `STRESS_NG_ARGUMENTS`.  The default is to run a CPU stressor on all cores (`--cpu 0`)
 
+# Installation
+
+You can use this container directly from Docker Hub: https://hub.docker.com/r/mmoores1/random_interval_stress_test
+
 # Usage
 
 This command will run a CPU stressor on all cores for a random time between 30 and 200 seconds, then wait for a random period between 30 and 200 seconds, and then do it again (with different random intervals).  It will keep going until you kill the container.
